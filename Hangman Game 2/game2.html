@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Javascript Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+<h1>90's Rappers and Producers</h1>
+<p>Guesses Left: <span id="guesses-left"></span></p>
+<p>Wrong Guesses: <span id="wrong-guesses"></span></p>
+<p>Wins: <span id="win-counter"></span></p>
+<p>Losses: <span id="loss-counter"></span></p>
+ <div class="text-center">
+        <button class="btn btn-warning btn-xs theme-button"><span class="glyphicon glyphicon-music"></span> Play Music</button>
+        <button class="btn btn-default btn-xs pause-button"><span class="glyphicon glyphicon-pause"></span> Pause Music</button>
+      </div>
+
+<h3 id="word-blank"></h3>
+
+<script>
+var audioElement = document.createElement("audio");
+      audioElement.setAttribute("src", "Assets/Lost-tapes.mp3");
+      $(".theme-button").on("click", function() {
+        audioElement.play();
+      });
+
+      $(".pause-button").on("click", function() {
+        audioElement.pause();
+      });
+
+ </script>
+
+<script src="./logic.js">
+	
+	
+</script>
+</body>
+</html>
